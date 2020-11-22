@@ -2,14 +2,12 @@ import React from 'react'
 
 import { Main } from './styles'
 
-import Sidebar from '../../components/Sidebar'
-
-function Chat() {
+function Sidebar() {
     return (
         <Main>
-            <Sidebar />
+            <h1>Sidebar</h1>
         </Main>
     )
 }
 
-export default Chat
+export default Sidebar
