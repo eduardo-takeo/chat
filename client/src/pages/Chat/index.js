@@ -1,13 +1,17 @@
 import React from 'react'
 
-import { Main } from './styles'
+import { Main, Messages } from './styles'
 
 import Sidebar from '../../components/Sidebar'
+import Header from '../../components/Header'
 
 function Chat() {
     return (
         <Main>
             <Sidebar />
+            <Messages>
+                <Header />
+            </Messages>
         </Main>
     )
 }
