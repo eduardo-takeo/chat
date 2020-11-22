@@ -5,6 +5,7 @@ import { Main, Board } from './styles'
 import Sidebar from '../../components/Sidebar'
 import Header from '../../components/Header'
 import Messages from '../../components/Messages'
+import MessageInput from '../../components/MessageInput'
 
 function Chat() {
     return (
@@ -13,6 +14,7 @@ function Chat() {
             <Board>
                 <Header />
                 <Messages />
+                <MessageInput />
             </Board>
         </Main>
     )
