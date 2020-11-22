@@ -1,17 +1,19 @@
 import React from 'react'
 
-import { Main, Messages } from './styles'
+import { Main, Board } from './styles'
 
 import Sidebar from '../../components/Sidebar'
 import Header from '../../components/Header'
+import Messages from '../../components/Messages'
 
 function Chat() {
     return (
         <Main>
             <Sidebar />
-            <Messages>
+            <Board>
                 <Header />
-            </Messages>
+                <Messages />
+            </Board>
         </Main>
     )
 }
