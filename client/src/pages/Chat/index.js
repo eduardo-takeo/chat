@@ -1,10 +1,18 @@
 import React from 'react'
 
+import { Main, Messages } from './styles'
+
+import Sidebar from '../../components/Sidebar'
+import Header from '../../components/Header'
+
 function Chat() {
     return (
-        <div>
-            Chat page
-        </div>
+        <Main>
+            <Sidebar />
+            <Messages>
+                <Header />
+            </Messages>
+        </Main>
     )
 }
 

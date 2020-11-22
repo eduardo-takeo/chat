@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
-    background-color: var(--color-primary);
+    display: flex;
+`
+
+export const Messages = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 `
