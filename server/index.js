@@ -1,10 +1,23 @@
-const express = require('express')
-const app = express()
+import express from "express";
+import { createServer } from "http";
+import { Server } from "socket.io";
 
-app.get('/', (req, res) => {
-    res.send('Hello world')
-})
+const PORT = 3000;
 
-app.listen(5000, () => {
-    console.log('Listening to the port 5000')
-})
+const app = express();
+const httpServer = createServer(app);
+const io = new Server(httpServer, {
+  cors: {
+    origin: "*",
+  },
+});
+
+io.on("connection", (socket) => {
+  socket.on("send-message", (message) => {
+    console.log(message);
+  });
+});
+
+httpServer.listen(PORT, (req, res) => {
+  console.log(`socket opened at port ${PORT}`);
+});
