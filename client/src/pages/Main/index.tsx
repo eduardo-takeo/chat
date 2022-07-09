@@ -1,3 +1,4 @@
+import Button from "../../components/Button";
 import S from "./Main.module.scss";
 
 function Main() {
@@ -8,7 +9,7 @@ function Main() {
         <input type="text" />
         <h1>Room</h1>
         <input type="text" />
-        <button className={S.enterButton}>Enter</button>
+        <Button>Enter</Button>
       </div>
     </main>
   );
